@@ -1,0 +1,28 @@
+body{
+    background-color: purple;
+    width: 100%;
+    height: 100%;
+    color: rgb(251, 240, 255);
+    text-align: center;
+    user-select: none;
+}
+
+
+    .formato_cripto{
+        display: flex;
+        width: 300px;
+        position: absolute;
+        margin-left: 200px;
+    }
+        .contenedor_escoger{
+            margin-left: 20px;
+            background-color: bisque;
+            border-radius: 35px;
+            color: rgb(234, 255, 0);
+        }
+            #cript{
+                margin: 20px;
+            }
+            #cript:hover, #cript_cifra_at:hover, #cript_cifra_cesar:hover{
+                cursor: pointer;
+            }

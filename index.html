@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Criptografia</title>
+        <!-- <link rel="stylesheet" href="css/estilos.css"/> -->
+    </head>
+    <body>
+
+        <form action="" onsubmit="return enviar(this);">
+            <label for="texto">Texto: </label>
+            <input type="text" id="texto" placeholder="Texto a ser convertido" /><br />
+
+            <div id="campo-chave">
+                <label for="k">Chave: </label>
+                <input type="number" id="k" placeholder="Chave da Cifra de César" /><br />
+            </div>
+
+            <label for="select-tipo">Tipo: </label>
+            <select onchange="onChange()" id="select-tipo">
+                <option value="0">Base 64</option>
+                <option value="1">Cifra de César</option>
+            </select><br />
+
+            <input type="radio" value="0" id="cript" name="funcao" checked="checked" onClick="onCheck(this)" /> 
+            <label for="cript">Codificar</label>
+            <input type="radio" value="1" id="descript" name="funcao" onClick="onCheck(this)" />
+            <label for="descript">Decodificar</label><br />
+
+            <input type="submit" id="btn-enviar" value="Codificar Mensagem!" />
+            <div id="resultado"></div>
+        </form>
+
+        <script type="text/javascript" src="js/index.js"></script>
+
+    </body>
+</html>
